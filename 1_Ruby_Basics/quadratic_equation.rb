@@ -6,8 +6,6 @@ puts "Input C"
 c = gets.chomp.to_f
 
 d = b * b - 4 * a * c
-x1 = ""
-x2 = ""
 
 if d > 0
     x1 = (-b + Math.sqrt(d)) / 2 * a
