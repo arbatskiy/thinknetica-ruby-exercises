@@ -17,5 +17,3 @@ elsif d == 0
 else
     puts "The equation can't be solved"
 end
-
-    

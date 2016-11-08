@@ -44,8 +44,3 @@ end
 if is_isosceles
     puts "The triangle is isosceles."
 end
-
-
-
-
-

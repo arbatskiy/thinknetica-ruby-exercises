@@ -11,6 +11,3 @@ if ideal_weight > 0
 else 
     puts "Cheers! Your weight is ideal already!"
 end
-
-
-
