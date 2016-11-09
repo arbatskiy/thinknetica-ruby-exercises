@@ -7,16 +7,16 @@ c = gets.chomp.to_f
 
 sides = [a, b, c].sort
 
-hypotenuse = sides.pop
 cat1 = sides[0]
 cat2 = sides[1]
+hypotenuse = sides[2]
 
-if a == b && b == c
-    message = "equilateral and isosceles."
+message = if a == b && b == c
+   "equilateral and isosceles."
 elsif hypotenuse ** 2 == cat1 ** 2 + cat2 ** 2
-    message = cat1 == cat2 ? "right and isosceles." : "right." 
+    cat1 == cat2 ? "right and isosceles." : "right." 
 elsif cat1 == cat2
-    message = "isosceles."
+   "isosceles."
 end
 
 puts "The triangle is #{message}"
