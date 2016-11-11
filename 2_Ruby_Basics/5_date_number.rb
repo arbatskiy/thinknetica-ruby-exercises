@@ -3,13 +3,10 @@ day = gets.chomp.to_i
 month = gets.chomp.to_i
 year = gets.chomp.to_i
 
-puts "Error! Day can be only 1-31" if day < 1 || day > 31
-puts "Error! Month can be only 1-12" if month < 1 || month > 12
+puts "Error! Day can be only 1-31" unless (1..31) === day
+puts "Error! Month can be only 1-12" unless (1..12) === month
 
-leap = year % 4 == 0 && year % 100 != 0
-unless leap
-    leap = year % 400 == 0
-end
+leap = ( year % 4 == 0 && year % 100 != 0 ) || year % 400 == 0
 
 day_number = day
 
